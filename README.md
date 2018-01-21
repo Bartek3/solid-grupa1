@@ -1,9 +1,11 @@
 ## Projekt Mastermind
 
+
 > Mastermind ma prostą budowę, jednak jest wymagający intelektualnie.
 
 — Tymon Oziemblewski, autor programu Mastermind
-<br>
+
+
 #### O programie Mastermind
 Program Mastermind, wykorzystany w projekcie, został napisany przez Tymona Oziemblewskiego. To prosta, logiczna gra komputerowa uruchamiana w konsoli. 
 Zabawa polega na zgadywaniu tajnego kodu składającego się z czterech cyfr.  W trakcie zgadywania gracz otrzymuje od komputera podpowiedzi: ile cyfr przedstawionych przez niego znajduje się we właściwym kodzie i ile z nich znajduje się na wskazanych przez niego pozycjach. 
@@ -28,10 +30,14 @@ Do prac związanych z wypełnieniem założeń projektu wykorzystany zostanie no
 * Git Bash - do uruchamiania narzędzi Reek oraz Rubocop.
 
 #### Przygotowania do refaktoryzacji
-Kod, mimo że jest stosunkowo krótki i składa się jedynie z dwóch klas (Code.rb oraz Game.rb), pozwala się wykazać, jeśli chodzi o refaktoryzację. Program przebadano narzędziem Reek. Co prawda w pliku Game.rb znajdują się jedynie 4 warningi, jednak w pliku Code.rb znajduje się ich aż 14. Narzędzie Rubocop wskazało łącznie 112 miejsc do poprawy w obu plikach. Biorąc pod uwagę, że program składa się jedynie ze 124 linijek kodu, jest to kiepski wynik – choć, oczywiście, zostanie on naprawiony w kolejnych fazach refaktoryzacji.
-<br>
+Kod, mimo że jest stosunkowo krótki i składa się jedynie z dwóch klas (Code.rb oraz Game.rb), pozwala się wykazać, jeśli chodzi o refaktoryzację. Program przebadano narzędziem Reek. Co prawda w pliku Game.rb znajdują się jedynie 4 warningi, jednak w pliku Code.rb znajduje się ich aż 14. 
+
+Narzędzie Rubocop wskazało łącznie 112 miejsc do poprawy w obu plikach. Biorąc pod uwagę, że program składa się jedynie ze 124 linijek kodu, jest to kiepski wynik – choć, oczywiście, zostanie on naprawiony w kolejnych fazach refaktoryzacji.
+
+
 ![Reek](/images/reekStart.png)
-— Raport programu Reek<br>
+— Raport programu Reek
+
 Znalezione zostały następujące *code smells:* 
 
 **[Game.rb:](https://github.com/OpenClosed/solid-grupa1/blob/master/lib/Game.rb)**
