@@ -10,14 +10,17 @@ attr_reader :code
 def self.info
 "Kod musi mieć #{@@length} cyfr#{@@length<=4 ? "y" : ""} z przedialu 1..#{@@complexity}"
 end
+
 def self.set length=4, complexity=4, display_mode=0
 @@length = length
 @@complexity = complexity
 @@display_mode = display_mode
 end
+
 def self.length
 @@length
 end
+
 def self.complexity
 @@complexity
 end
