@@ -55,4 +55,15 @@ Znalezione zostały następujące *code smells:*
 
 Należy wyeliminować jak najwięcej spośród nich, a w miarę możliwości wszystkie.
 
+####Refaktoryzacja - krok pierwszy
+Pierwszym krokiem w refaktoryzacji z pomocą narzędzia Reek będzie nakazanie mu ignorowania wszelkich *code smells* niewystępujących w książce Martina Fowlera i zarazem występujących w przypadku kodu źródłowego programu Mastermind. Usunięto uwzględnianie następujących ostrzeżeń:
+* [TooManyStatements](https://github.com/troessner/reek/blob/master/docs/Too-Many-Statements.md)
+* [DuplicateMethodCall](https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md)
+* [IrresponsibleModule](https://github.com/troessner/reek/blob/master/docs/Irresponsible-Module.md)
+* [UncommunicativeVariableName](https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md)
+
+Co prawda niektóre ostrzeżenia mogą być usunięte bardziej niż łatwo (na przykład ostrzeżenie [UncommunicativeVariableName](https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md) wymagające jedynie zmiany nazw niektórych zmiennych z czegoś w stylu "i", "c" na nazwy zgodne z konwencją *samodokumentującego się kodu*)
+
+Dodanie takich restrykcji jest jednak uwzględnione w poleceniach do projektu. Aby tego dokonać, utworzony został plik *conf.reek*, który zawiera odpowiednie ograniczenia dla narzędzia Reek.
+
 
