@@ -1,0 +1,11 @@
+TooManyStatements:
+  enabled: false
+
+DuplicateMethodCall:
+  enabled: false
+
+IrresponsibleModule:
+  enabled: false
+
+UncommunicativeVariableName:
+  enabled: false
