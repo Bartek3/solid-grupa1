@@ -55,7 +55,7 @@ Znalezione zostały następujące *code smells:*
 
 Należy wyeliminować jak najwięcej spośród nich, a w miarę możliwości wszystkie.
 
-####Refaktoryzacja - krok pierwszy
+#### Refaktoryzacja - krok pierwszy
 Pierwszym krokiem w refaktoryzacji z pomocą narzędzia Reek będzie nakazanie mu ignorowania wszelkich *code smells* niewystępujących w książce Martina Fowlera i zarazem występujących w przypadku kodu źródłowego programu Mastermind. Usunięto uwzględnianie następujących ostrzeżeń:
 * [TooManyStatements](https://github.com/troessner/reek/blob/master/docs/Too-Many-Statements.md)
 * [DuplicateMethodCall](https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md)
@@ -65,5 +65,12 @@ Pierwszym krokiem w refaktoryzacji z pomocą narzędzia Reek będzie nakazanie m
 Co prawda niektóre ostrzeżenia mogą być usunięte bardziej niż łatwo (na przykład ostrzeżenie [UncommunicativeVariableName](https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md) wymagające jedynie zmiany nazw niektórych zmiennych z czegoś w stylu "i", "c" na nazwy zgodne z konwencją *samodokumentującego się kodu*)
 
 Dodanie takich restrykcji jest jednak uwzględnione w poleceniach do projektu. Aby tego dokonać, utworzony został plik *conf.reek*, który zawiera odpowiednie ograniczenia dla narzędzia Reek.
+
+#### Refaktoryzacja - krok drugi
+Kolejnym zadaniem będzie pozbycie się ostrzeżenia [ClassVariable](https://github.com/troessner/reek/blob/master/docs/Class-Variable.md), które jest główną bolączką klasy [Code.rb.](https://github.com/OpenClosed/solid-grupa1/blob/master/lib/Code.rb) Po dokładniejszym zagłębieniu się w temat można stwierdzić, że Reek odradza stosowanie zmiennych klas, ponieważ mimo że działają i spełniają swoją rolę, to są problematyczne, co wyjaśnia[niniejszy artykuł.](http://4thmouse.com/index.php/2011/03/20/why-class-variables-in-ruby-are-a-bad-idea/)
+
+Ostrzeżenie wyeliminowano dzięki zastosowaniu zmiennych globalnych w miejsce zmiennych klas.
+
+Tym sposobem klasa [Code.rb.](https://github.com/OpenClosed/solid-grupa1/blob/master/lib/Code.rb) stała się wolna od ostrzeżeń ze strony narzędzia Reek.
 
 
