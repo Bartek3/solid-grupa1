@@ -53,12 +53,6 @@ class Code
     valid
   end
 
-  def <=>(code)
-    return -1 if self.to_s < code.to_s
-    return 0 if self.to_s == code.to_s
-    return 1
-  end
-
   def compare(code)
     dobre_miejsce = 0
     dobra_liczba = 0
