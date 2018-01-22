@@ -28,7 +28,6 @@ class Code
 
   def initialize(code = random)
     @code = code
-    self.valid?
   end
 
   def random
@@ -57,7 +56,7 @@ class Code
     dobre_miejsce = 0
     dobra_liczba = 0
     code_temp = String.new code.to_s
-    for i in 0..($length - 1)
+    $length.times do |i|
       dobre_miejsce += 1 if @code[i] == code.to_s[i]
       if code_temp.include? @code[i]
         code_temp[code_temp.index @code[i]] = 'x'
