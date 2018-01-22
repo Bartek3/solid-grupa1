@@ -104,6 +104,7 @@ Większość ostrzeżeń została wyeliminowana po prostu dzięki dodaniu brakuj
 Dla pewnych przypadków było jednak konieczne dodanie odpowiednich restrykcji, ponieważ próba twardego naprawiania niektórych miejsc w kodzie źródłowym zamiast poprawiać jego jakość, mogłaby ją zdecydowanie pogorszyć.
 
 ![RefactoringEnd](/images/refactoringEnd.png)
+
 — Raport narzędzi Reek i Rubocop po zakończeniu refaktoringu
 
 #### Dodanie funkcjonalności do programu Mastermind: wybór długości zgadywanego kodu
@@ -112,5 +113,16 @@ Po kompletnej refaktoryzacji kodu źródłowego programu Mastermind z całą pew
 
 Widać też, że UI programu wymaga niewielkiego odświeżenia, tak, by gra stała się nieco atrakcyjniejsza dla oka - na przykład poprzez dodanie komunikatu powitalnego i poprawę komunikatów wyświetlanych na ekranie.
 
-![Okno powitalne](/images/mastermindStart.png)
+![Okno powitalne Start](/images/mastermindStart.png)
+
 — Okno powitalne programu Mastermind przed rozpoczęciem dokonywania zmian
+
+#### Raport z dodanych zmian
+
+Do pliku Game.rb zostały dodane dwie metody: *read_length* oraz *valid_length?* które z sobą współpracują. Ich zadaniem jest pobranie od użytkownika oczekiwanej przez niego długości kodu do odgadnięcia. Długość kodu jest zarazem jego złożonością (chociaż w tym przypadku kod jest otwarty na ewentualną zmianę w przyszłości), a więc jeśli użytkownik zdecyduje się na zgadywanie kodu o długości 4, to może spodziewać się w kodzie wyłącznie cyfr z przedziału <1;4>.
+
+Ta zmiana pozwala na znacznie większą dawkę zabawy niż w pierwotnej wersji programu kiedy długość kodu do zgadnięcia była sztywno ustawiona na 4. Należy oddać sprawiedliwość autorowi Mastermind, że metody w pliku Code.rb były znakomicie otwarte na taką zmianę i nie wymagały żadnych zabiegów, co bardzo ułatwiło dodanie tej zmiany. Pomocny był również fakt uprzedniej refaktoryzacji kodu, który uczynił go bardziej przejrzystym i łatwym w zrozumieniu oraz otwartym na edycję.
+
+![Okno powitalne End](/images/mastermindEnd.png)
+
+— Okno powitalne programu Mastermind po dokonaniu zmian
