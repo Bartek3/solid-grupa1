@@ -5,6 +5,8 @@
 
 — Tymon Oziemblewski, autor programu Mastermind
 
+####Autor projektu: Bartłomiej Pawelski
+
 
 ## O programie Mastermind
 [Program Mastermind](http://tymski.pl/mastermind-1-0-konsolowa-gra-w-jezyku-ruby/), wykorzystany w projekcie, został napisany przez Tymona Oziemblewskiego. To prosta, logiczna gra komputerowa uruchamiana w konsoli. 
@@ -121,7 +123,7 @@ Widać też, że UI programu wymaga niewielkiego odświeżenia, tak, by gra sta�
 
 Do pliku Game.rb zostały dodane dwie metody: *read_length* oraz *valid_length?* które z sobą współpracują. Ich zadaniem jest pobranie od użytkownika oczekiwanej przez niego długości kodu do odgadnięcia. Długość kodu jest zarazem jego złożonością (chociaż w tym przypadku kod jest otwarty na ewentualną zmianę w przyszłości), a więc jeśli użytkownik zdecyduje się na zgadywanie kodu o długości 4, to może spodziewać się w kodzie wyłącznie cyfr z przedziału <1;4>.
 
-Ta zmiana pozwala na znacznie większą dawkę zabawy niż w pierwotnej wersji programu kiedy długość kodu do zgadnięcia była sztywno ustawiona na 4. Należy oddać sprawiedliwość autorowi Mastermind, że metody w pliku Code.rb były znakomicie otwarte na taką zmianę i nie wymagały żadnych zabiegów, co bardzo ułatwiło dodanie tej zmiany. Pomocny był również fakt uprzedniej refaktoryzacji kodu, który uczynił go bardziej przejrzystym i łatwym w zrozumieniu oraz otwartym na edycję.
+Ta zmiana pozwala na znacznie większą dawkę zabawy niż w pierwotnej wersji programu kiedy długość kodu do zgadnięcia była sztywno ustawiona na 4. Należy oddać sprawiedliwość autorowi Mastermind, że metody w pliku Code.rb były znakomicie otwarte na takie rozszerzenie i nie wymagały żadnych zabiegów, co bardzo ułatwiło pracę. Pomocny był również fakt uprzedniej refaktoryzacji kodu, który uczynił go bardziej przejrzystym i łatwym w zrozumieniu oraz otwartym na łatwą edycję poprzez dodanie nowych metod.
 
 ![Interfejs End](/images/mastermindEnd.png)
 
