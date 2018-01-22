@@ -4,11 +4,11 @@ attr_reader :code
 
 $length = 4	# długość każdego kodu
 $complexity = 4	# ilość różnych znaków w kodzie NIE PRZEKRACZAC 9
-@code = ""	# kod przechowywany w Stringu
+@code = ''	# kod przechowywany w Stringu
 $display_mode = 0
 
 def self.info
-"Kod musi mieć #{length} cyfr#{length<=4 ? "y" : ""} z przedialu 1..#{complexity}"
+"Kod musi mieć #{length} cyfr#{length<=4 ? 'y' : ''} z przedziału od 1 do #{complexity}!"
 end
 
 def self.set length=4, complexity=4, display_mode=0
@@ -31,7 +31,7 @@ self.valid?
 end
 
 def random	# metoda losująca
-code = ""
+code = ''
 $length.times do
 code += ((rand ($complexity))+1).to_i.to_s
 end
@@ -71,9 +71,9 @@ dobra_liczba += 1
 end
 end
 if $display_mode==0
-dobra_liczba.to_s + " " + dobre_miejsce.to_s
+dobra_liczba.to_s + ' ' + dobre_miejsce.to_s
 else
-(dobra_liczba-dobre_miejsce).to_s + " " + dobre_miejsce.to_s
+(dobra_liczba-dobre_miejsce).to_s + ' ' + dobre_miejsce.to_s
 end
 end
 end
