@@ -83,5 +83,28 @@ Narzędzie Reek nie pokazuje już żadnych ostrzeżeń dla programu, jednak już
 ![Rubocop](/images/rubocopStart.png)
 — Końcówka raportu narzędzia Rubocop
 
+W celu poprawy jakości kodu wykonane zostały kolejno następujące kroki:
+* Zastąpienie podwójnych cudzysłowów pojedynczymi w łańcuchach znaków bez interpolacji w pliku Game.rb oraz Code.rb (łączna ilość *offences* spadła kolejno do 107 i 101)
+* Kosmetyczne zmiany w pliku Game.rb - dodanie wcięć, komentarza nad klasą, etc. (łączna ilość *offences* spadła do 80)
+* Jak wyżej, tym razem w pliku Code.rb (łączna ilość *offences* spadła do 66)
+* W pliku Code.rb: zadbanie o spacje otaczające operatory w pliku oraz otoczenie parametrów metod nawiasami, i tym podobne (łączna ilość *offences* spadła do 38)
+* Pozbycie się *offence* GlobalVars, które nie powinno być wskazywane przez Rubocop z powodu konieczności jego użycia (łączna ilość *offences* spadła do 20)
+* Pozbycie się zbędnej metody *<=>* w pliku Code.rb (łączna ilość *offences* spadła do 16)
+* Poprawa składni linijki 37. w pliku Code.rb (łączna ilość *offences* spadła do 13)
+* Dodanie znaczników "rubocop:enable GlobalVars" na końcu plików z kodem źródłowym (łączna ilość *offences* spadła do 11)
+* Zastosowanie pętli opartej o metodę *times* zamiast pętli opartej o metodę *for* w pliku Code.rb, linijka 60. (łączna ilość *offences* spadła do 10)
+* Usunięcie nieużywanej linijki kodu w pliku Code.rb (łączna ilość *offences* spadła do 9)
+* Utworzenie pliku konfiguracyjnego dla Rubocopa i dodanie rozsądnych restrykcji (łączna ilość *offences* spadła do 5)
+* Ostateczne oczyszczenie kodu i dodanie restrykcji w pliku konfiguracyjnym Rubocopa dla pętli *end while* (łączna ilość *offences* spadła do 0)
 
+Na moment obecny zarówno narzędzie Reek jak i narzędzie Rubocop wskazują brak problematycznych miejsc w kodzie. 
 
+Większość ostrzeżeń została wyeliminowana po prostu dzięki dodaniu brakujących wcięć, spacji czy usunięciu/dodaniu nawiasów w odpowiednich miejscach. 
+
+Dla pewnych przypadków było jednak konieczne dodanie odpowiednich restrykcji, ponieważ próba twardego naprawiania niektórych miejsc w kodzie źródłowym zamiast poprawiać jego jakość, mogłaby ją zdecydowanie pogorszyć.
+
+![RefactoringEnd](/images/refactoringEnd.png)
+
+#### Dodanie funkcjonalności do programu Mastermind: wybór długości zgadywanego kodu
+
+Po kompletnej refaktoryzacji kodu źródłowego programu Mastermind z całą pewnością można stwierdzić że stał się on otwarty na dodanie zmian. Zgodnie z założeniem projektu dodana zostanie funkcjonalność pozwalająca graczowi na wybór długości zgadywanego kodu na początku gry.
