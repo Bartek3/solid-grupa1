@@ -20,11 +20,7 @@ class Game
   end
 
   def input_reader
-    input = gets.chomp
-    if input.include?('nowa')
-      puts '[to do] powinna sie zaczac nowa gra'
-    end
-    input
+    gets.chomp
   end
 
   def play

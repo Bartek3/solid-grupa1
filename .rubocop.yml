@@ -12,3 +12,6 @@ MethodLength:
 
 Metrics/AbcSize:
   Max: 25
+
+Lint/Loop:
+  Enabled: false
