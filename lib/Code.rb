@@ -46,7 +46,7 @@ class Code
     valid = false if @code.length != $length
     return false unless valid
     @code.each_char do |c|
-    valid = false if c.to_s <= 0.to_s || c.to_s > $complexity.to_s
+      valid = false if c.to_s <= 0.to_s || c.to_s > $complexity.to_s
     end
     valid
   end
