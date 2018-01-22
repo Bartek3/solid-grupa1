@@ -104,7 +104,13 @@ Większość ostrzeżeń została wyeliminowana po prostu dzięki dodaniu brakuj
 Dla pewnych przypadków było jednak konieczne dodanie odpowiednich restrykcji, ponieważ próba twardego naprawiania niektórych miejsc w kodzie źródłowym zamiast poprawiać jego jakość, mogłaby ją zdecydowanie pogorszyć.
 
 ![RefactoringEnd](/images/refactoringEnd.png)
+— Raport narzędzi Reek i Rubocop po zakończeniu refaktoringu
 
 #### Dodanie funkcjonalności do programu Mastermind: wybór długości zgadywanego kodu
 
-Po kompletnej refaktoryzacji kodu źródłowego programu Mastermind z całą pewnością można stwierdzić że stał się on otwarty na dodanie zmian. Zgodnie z założeniem projektu dodana zostanie funkcjonalność pozwalająca graczowi na wybór długości zgadywanego kodu na początku gry.
+Po kompletnej refaktoryzacji kodu źródłowego programu Mastermind z całą pewnością można stwierdzić że stał się on otwarty na zmiany. Zgodnie z założeniem projektu dodana zostanie funkcjonalność pozwalająca graczowi na wybór długości zgadywanego kodu na początku gry.
+
+Widać też, że UI programu wymaga niewielkiego odświeżenia, tak, by gra stała się nieco atrakcyjniejsza dla oka - na przykład poprzez dodanie komunikatu powitalnego i poprawę komunikatów wyświetlanych na ekranie.
+
+![Okno powitalne](/images/mastermindStart.png)
+— Okno powitalne programu Mastermind przed rozpoczęciem dokonywania zmian

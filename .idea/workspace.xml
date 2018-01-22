@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89a439fc-4a49-4930-a195-9ad6e4602176" name="Default" comment="Aktualizacja">
+    <list default="true" id="89a439fc-4a49-4930-a195-9ad6e4602176" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -15,7 +15,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Mastermind@Code.coverage" NAME="Code Coverage Results" MODIFIED="1516538551354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Mastermind" />
-    <SUITE FILE_PATH="coverage/solid_grupa1@Game.coverage" NAME="Game Coverage Results" MODIFIED="1516628096711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="Mastermind" />
+    <SUITE FILE_PATH="coverage/solid_grupa1@Game.coverage" NAME="Game Coverage Results" MODIFIED="1516629598220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="Mastermind" />
     <SUITE FILE_PATH="coverage/Mastermind@Game.coverage" NAME="Game Coverage Results" MODIFIED="1516538934367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="Mastermind" />
   </component>
   <component name="FileEditorManager">
@@ -24,8 +24,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="167">
-                <caret line="105" column="40" lean-forward="false" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
+              <first_editor relative-caret-position="162">
+                <caret line="112" column="211" lean-forward="false" selection-start-line="112" selection-start-column="211" selection-end-line="112" selection-end-column="211" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -36,7 +36,7 @@
       <file leaf-file-name="Game.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/Game.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="17">
               <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
               <folding />
             </state>
@@ -46,7 +46,7 @@
       <file leaf-file-name="Code.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/Code.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12">
+            <state relative-caret-position="816">
               <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
               <folding />
             </state>
@@ -285,7 +285,7 @@
       <option name="presentableId" value="Default" />
       <updated>1516538275675</updated>
       <workItem from="1516538279851" duration="2091000" />
-      <workItem from="1516558154031" duration="32125000" />
+      <workItem from="1516558154031" duration="32757000" />
     </task>
     <task id="LOCAL-00001" summary="Aktualizacja README.md">
       <created>1516566997819</created>
@@ -462,11 +462,25 @@
       <option name="project" value="LOCAL" />
       <updated>1516628626498</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Aktualizacja pliku README po refaktoryzacji.">
+      <created>1516629273255</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1516629273255</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Dodanie zdjęcia z raportem po zakończeniu refaktoryzacji.">
+      <created>1516629394005</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1516629394005</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34216000" />
+    <option name="totallyTimeSpent" value="34848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -481,7 +495,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2944079" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3651316" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -537,8 +551,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Aktualizacja README.md" />
-    <MESSAGE value="Aktualizacja README.md (rozszerzenie akapitu &quot;przygotowania do refaktoryzacji&quot;" />
     <MESSAGE value="Aktualizacja README.md (poprawki wizualne)" />
     <MESSAGE value="Dodanie pliku conf.reek nakazującego narzędziu Reek ignorowanie ostrzeżeń niewystępujących w książce Martina Fowlera" />
     <MESSAGE value="Aktualizacja pliku README o podrozdział &quot;Refaktoryzacja - krok pierwszy&quot;" />
@@ -562,7 +574,9 @@
     <MESSAGE value="Przeniesienie restrykcji z początku i końca kodu do pliku konfiguracyjnego narzędzia Rubocop" />
     <MESSAGE value="Pozbycie się pozostałych dwóch offences z pliku Code.rb" />
     <MESSAGE value="Ostateczne oczyszczenie kodu i dodanie restrykcji w pliku konfiguracyjnym Rubocopa dla pętli &quot;end while&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ostateczne oczyszczenie kodu i dodanie restrykcji w pliku konfiguracyjnym Rubocopa dla pętli &quot;end while&quot;" />
+    <MESSAGE value="Aktualizacja pliku README po refaktoryzacji." />
+    <MESSAGE value="Dodanie zdjęcia z raportem po zakończeniu refaktoryzacji." />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodanie zdjęcia z raportem po zakończeniu refaktoryzacji." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -571,18 +585,18 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Code.rb" />
     <entry file="file://$PROJECT_DIR$/Game.rb" />
-    <entry file="file://$PROJECT_DIR$/lib/Code.rb">
+    <entry file="file://$PROJECT_DIR$/lib/Game.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        <state relative-caret-position="17">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Game.rb">
+    <entry file="file://$PROJECT_DIR$/lib/Code.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        <state relative-caret-position="816">
+          <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -590,8 +604,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="167">
-            <caret line="105" column="40" lean-forward="false" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
+          <first_editor relative-caret-position="162">
+            <caret line="112" column="211" lean-forward="false" selection-start-line="112" selection-start-column="211" selection-end-line="112" selection-end-column="211" />
             <folding />
           </first_editor>
           <second_editor />
