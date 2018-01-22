@@ -8,13 +8,13 @@ end
 def guess
 begin
 input = input_reader
-@code = Code.new(input)
-puts Code.info unless @code.valid?
-end while !(@code.valid?)
-if @secret_code.code == @code.code
+$code = Code.new(input)
+puts Code.info unless $code.valid?
+end while !($code.valid?)
+if @secret_code.code == $code.code
 true
 else
-puts "#{@code} #{@secret_code.compare @code}"
+puts "#{$code} #{@secret_code.compare $code}"
 false
 end
 end
