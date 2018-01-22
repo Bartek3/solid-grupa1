@@ -2,19 +2,13 @@
 class Code
   attr_reader :code
 
-  $length = 4	# dlugosc kazdego kodu
-  $complexity = 4	# ilosc znakow w kodzie
+  $length = $length	# dlugosc kazdego kodu
+  $complexity = $complexity	# ilosc znakow w kodzie
   @code = ''	# kod przechowywany w lancuchu znakow
   $display_mode = 0
 
   def self.info
     "Kod musi mieć #{length} cyfr#{length <= 4 ? 'y' : ''} z przedziału od 1 do #{complexity}!"
-  end
-
-  def self.set(length = 4, complexity = 4, display_mode = 0)
-    $length = length
-    $complexity = complexity
-    $display_mode = display_mode
   end
 
   def self.length
