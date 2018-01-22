@@ -71,3 +71,4 @@ class Code
     end
   end
 end
+# rubocop:enable GlobalVars

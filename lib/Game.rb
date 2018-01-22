@@ -46,3 +46,5 @@ end
 game = Game.new
 game.hello
 game.play
+
+# rubocop:enable GlobalVars
