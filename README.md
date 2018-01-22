@@ -36,7 +36,7 @@ Narzędzie Rubocop wskazało łącznie 112 miejsc do poprawy w obu plikach. Bior
 
 
 ![Reek](/images/reekStart.png)
-— Raport programu Reek
+— Raport narzędzia Reek
 
 Znalezione zostały następujące *code smells:* 
 
@@ -62,15 +62,26 @@ Pierwszym krokiem w refaktoryzacji z pomocą narzędzia Reek będzie nakazanie m
 * [IrresponsibleModule](https://github.com/troessner/reek/blob/master/docs/Irresponsible-Module.md)
 * [UncommunicativeVariableName](https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md)
 
-Co prawda niektóre ostrzeżenia mogą być usunięte bardziej niż łatwo (na przykład ostrzeżenie [UncommunicativeVariableName](https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md) wymagające jedynie zmiany nazw niektórych zmiennych z czegoś w stylu "i", "c" na nazwy zgodne z konwencją *samodokumentującego się kodu*)
+Co prawda niektóre ostrzeżenia mogą być usunięte bardziej niż łatwo (na przykład [UncommunicativeVariableName](https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md) wymagające jedynie zmiany nazw niektórych zmiennych z czegoś w stylu "i", "c" na nazwy zgodne z konwencją *samodokumentującego się kodu*)
 
 Dodanie takich restrykcji jest jednak uwzględnione w poleceniach do projektu. Aby tego dokonać, utworzony został plik *conf.reek*, który zawiera odpowiednie ograniczenia dla narzędzia Reek.
 
 #### Refaktoryzacja - krok drugi
-Kolejnym zadaniem będzie pozbycie się ostrzeżenia [ClassVariable](https://github.com/troessner/reek/blob/master/docs/Class-Variable.md), które jest główną bolączką klasy [Code.rb.](https://github.com/OpenClosed/solid-grupa1/blob/master/lib/Code.rb) Po dokładniejszym zagłębieniu się w temat można stwierdzić, że Reek odradza stosowanie zmiennych klas, ponieważ mimo że działają i spełniają swoją rolę, to są problematyczne, co wyjaśnia[niniejszy artykuł.](http://4thmouse.com/index.php/2011/03/20/why-class-variables-in-ruby-are-a-bad-idea/)
+Kolejnym zadaniem będzie pozbycie się ostrzeżenia [ClassVariable](https://github.com/troessner/reek/blob/master/docs/Class-Variable.md), które jest główną bolączką klasy [Code.rb.](https://github.com/OpenClosed/solid-grupa1/blob/master/lib/Code.rb) Po dokładniejszym zagłębieniu się w temat można stwierdzić, że Reek odradza stosowanie zmiennych klas, ponieważ mimo że działają i spełniają swoją rolę, to są problematyczne, co wyjaśnia [niniejszy artykuł.](http://4thmouse.com/index.php/2011/03/20/why-class-variables-in-ruby-are-a-bad-idea/)
 
 Ostrzeżenie wyeliminowano dzięki zastosowaniu zmiennych globalnych w miejsce zmiennych klas.
 
-Tym sposobem klasa [Code.rb.](https://github.com/OpenClosed/solid-grupa1/blob/master/lib/Code.rb) stała się wolna od ostrzeżeń ze strony narzędzia Reek.
+Tym sposobem klasa [Code.rb](https://github.com/OpenClosed/solid-grupa1/blob/master/lib/Code.rb) stała się wolna od ostrzeżeń ze strony narzędzia Reek.
+
+#### Refaktoryzacja - krok trzeci
+Ostatnim ostrzeżeniem ze strony narzędzia Reek jest [InstanceVariableAssumption](https://github.com/troessner/reek/blob/master/docs/Instance-Variable-Assumption.md).  Reek widział problem w tym, że kod źródłowy klasy Game.rb zbyt dużo zakłada dla zmiennej instancji. Zamiast zmiennej instancji *@code* należało użyć zmiennej globalnej *$code*, aby pozbyć się tego ostrzeżenia.
+
+#### Dalsze prace nad kodem
+Narzędzie Reek nie pokazuje już żadnych ostrzeżeń dla programu, jednak już na pierwszy rzut oka widać, że styl i estetyka kodu pozostawiają wiele do życzenia. W dalszych pracach zostanie wykorzystane narzędzie Rubocop. Na starcie prac wskazuje on łącznie 116 uchybień w całym kodzie źródłowym programu. Dalsza praca jest więc w pełni zasadna. Być może nie uda się pozbyć tak wielu uchybień bez naruszania szkieletu programu, jednak rozsądnym celem wydaje się być eliminacja znacznej większości z nich.
+
+
+![Rubocop](/images/rubocopStart.png)
+— Końcówka raportu narzędzia Rubocop
+
 
 
