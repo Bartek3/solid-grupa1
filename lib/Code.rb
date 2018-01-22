@@ -34,7 +34,7 @@ class Code
   def random
     code = ''
     $length.times do
-      code += ((rand ($complexity))+1).to_i.to_s
+      code += ((rand $complexity) + 1).to_i.to_s
     end
     code
   end
