@@ -1,3 +1,4 @@
+# rubocop:disable GlobalVars
 # Klasa zawiera informacje na temat kodu generowanego lub do odgadniecia
 class Code
   attr_reader :code

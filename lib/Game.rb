@@ -1,3 +1,4 @@
+# rubocop:disable GlobalVars
 require_relative 'Code'
 
 # Klasa wykonywalna Game.rb, zawiera podstawowy interfejs programu Mastermind
