@@ -1,4 +1,3 @@
-# rubocop:disable GlobalVars
 # Klasa zawiera informacje na temat kodu generowanego lub do odgadniecia
 class Code
   attr_reader :code
@@ -70,4 +69,3 @@ class Code
     end
   end
 end
-# rubocop:enable GlobalVars
