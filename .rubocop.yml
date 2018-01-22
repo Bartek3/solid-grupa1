@@ -1,0 +1,11 @@
+Naming/FileName:
+  Enabled: false
+
+GlobalVars:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 100
+
+MethodLength:
+  Max: 15
