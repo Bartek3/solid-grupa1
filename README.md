@@ -5,7 +5,7 @@
 
 — Tymon Oziemblewski, autor programu Mastermind
 
-####Autor projektu: Bartłomiej Pawelski
+#### Autor projektu: Bartłomiej Pawelski
 
 
 ## O programie Mastermind
